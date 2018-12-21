@@ -3,7 +3,7 @@ import * as express from 'express';
 const app = express();
 
 app.get('/invoice', (req, res) => {
-    const address = 'muoRvov495zRtS7DDJ6eFMbd7KjF7YS7YV';
+    const address = 'muoRvov495zRtS7DDJ6eFMbd7KjF7YS7YV'; // use address generated from 
     return res.json({
         invoice: `bitcoin:${address}?amount=${req.query.amount}`
     });
