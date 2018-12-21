@@ -7,12 +7,12 @@ $ yarn # or npm install
 $ yarn build # npm run build
 ```
 
-`src/app.ts` がトランスパイルされ、 `src/app.js` が生成される。
+`src/app.ts` がトランスパイルされ、 `dist/src/app.js` が生成される。
 
 ## Run server
 
 ```
-$ node src/app.js # listen on port 3000
+$ yarn start # or $ npm start
 ```
 
 ## Example
