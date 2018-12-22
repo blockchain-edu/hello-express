@@ -1,12 +1,15 @@
 import * as express from 'express';
+import * as cors from 'cors';
 
 const app = express();
 
-app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-});
+app.use(cors());
+
+// app.use((req, res, next) => {
+//     res.header("Access-Control-Allow-Origin", "*");
+//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//     next();
+// });
 
 app.get('/invoice', (req, res) => {
     const address = 'muoRvov495zRtS7DDJ6eFMbd7KjF7YS7YV'; // use address generated from 
