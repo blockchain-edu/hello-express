@@ -4,10 +4,7 @@
 
 ```
 $ yarn # or npm install
-$ yarn build # npm run build
 ```
-
-`src/app.ts` がトランスパイルされ、 `dist/src/app.js` が生成される。
 
 ## Run server
 
